@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b0sgtTrxRHBmxF5VbfOHVKUz1nfDdk1nDl4y/CaHGSD2gxLMdWUTscHK9Z9fkzrhEWAPocyRCdeBzUzcbkEGCA==",
+  "dgSpecHash": "lntOpfXoY6Ywg6DFYqamBhobCgN1642Ha8v38Yb1ABQv0k7Dr7BywdsFmf+oRYZ7VqII23EFilD/Tc+Ve4yDZA==",
   "success": true,
-  "projectFilePath": "D:\\Tài Liệu\\Source\\DotnetCore\\Coasia.WebApiRestful.Service\\Coasia.WebApiRestful.Service.csproj",
+  "projectFilePath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Service\\Coasia.WebApiRestful.Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
