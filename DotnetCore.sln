@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApiRestful", "Coasia.WebApiRestful\Coasia.WebApiRestful.csproj", "{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApiRestful.Data", "Coasia.WebApiRestful.Data\Coasia.WebApiRestful.Data.csproj", "{5A371C43-972E-49DA-80CD-45EE9D185A65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Data", "Coasia.WebApiRestful.Data\Coasia.WebApiRestful.Data.csproj", "{5A371C43-972E-49DA-80CD-45EE9D185A65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApiRestful.Domain", "Coasia.WebApiRestful.Domain\Coasia.WebApiRestful.Domain.csproj", "{27AB5563-6843-4F93-9656-8B33A651B61C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Domain", "Coasia.WebApiRestful.Domain\Coasia.WebApiRestful.Domain.csproj", "{27AB5563-6843-4F93-9656-8B33A651B61C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApiRestful.Infrastructure", "Coasia.WebApiRestful.Infrastructure\Coasia.WebApiRestful.Infrastructure.csproj", "{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Infrastructure", "Coasia.WebApiRestful.Infrastructure\Coasia.WebApiRestful.Infrastructure.csproj", "{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApiRestful.Service", "Coasia.WebApiRestful.Service\Coasia.WebApiRestful.Service.csproj", "{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Service", "Coasia.WebApiRestful.Service\Coasia.WebApiRestful.Service.csproj", "{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApi.Restful.Core", "Coasia.WebApi.Restful.Core\Coasia.WebApi.Restful.Core.csproj", "{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApi.Restful.Core", "Coasia.WebApi.Restful.Core\Coasia.WebApi.Restful.Core.csproj", "{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful", "Coasia.WebApiRestful\Coasia.WebApiRestful.csproj", "{1F3188A4-A957-4E77-A6B7-D9FA0B60D515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3188A4-A957-4E77-A6B7-D9FA0B60D515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3188A4-A957-4E77-A6B7-D9FA0B60D515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3188A4-A957-4E77-A6B7-D9FA0B60D515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3188A4-A957-4E77-A6B7-D9FA0B60D515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

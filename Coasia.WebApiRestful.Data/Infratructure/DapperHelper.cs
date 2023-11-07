@@ -18,10 +18,10 @@ namespace Coasia.WebApiRestful.Data.Infratructure
     {
         private readonly string connectString = string.Empty;
 
-        public DapperHelper(IConfiguration configuration)
-        {
+        //public DapperHelper(IConfiguration configuration)
+        //{
 
-        }
+        //}
         public T NpgAdd(T Entity)
         {
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
