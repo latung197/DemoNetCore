@@ -1,0 +1,14 @@
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.deps.json
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.runtimeconfig.json
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.dll
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.AssemblyReference.cache
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.AssemblyInfoInputs.cache
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.AssemblyInfo.cs
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.CoreCompileInputs.cache
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.dll
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\refint\Coasia.WebApiRestful.Data.dll
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.genruntimeconfig.cache
+D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\ref\Coasia.WebApiRestful.Data.dll

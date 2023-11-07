@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coasia.WebApiRestful", "Coasia.WebApiRestful\Coasia.WebApiRestful.csproj", "{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Data", "Coasia.WebApiRestful.Data\Coasia.WebApiRestful.Data.csproj", "{5A371C43-972E-49DA-80CD-45EE9D185A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Domain", "Coasia.WebApiRestful.Domain\Coasia.WebApiRestful.Domain.csproj", "{27AB5563-6843-4F93-9656-8B33A651B61C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Infrastructure", "Coasia.WebApiRestful.Infrastructure\Coasia.WebApiRestful.Infrastructure.csproj", "{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApiRestful.Service", "Coasia.WebApiRestful.Service\Coasia.WebApiRestful.Service.csproj", "{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coasia.WebApi.Restful.Core", "Coasia.WebApi.Restful.Core\Coasia.WebApi.Restful.Core.csproj", "{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE3C827-1568-4FBA-9D67-8A5B803C4D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A371C43-972E-49DA-80CD-45EE9D185A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27AB5563-6843-4F93-9656-8B33A651B61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AB5563-6843-4F93-9656-8B33A651B61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AB5563-6843-4F93-9656-8B33A651B61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AB5563-6843-4F93-9656-8B33A651B61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51E3B3E-F1E7-42FB-8218-D48D52AC6632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F22D16-BF66-4AA8-ADB2-2A8401C0954C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6B581B-A5F0-4A10-BF17-CE965E1F1313}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ADEEF18-8FF8-430A-8790-4F1A98D4EF48}
+	EndGlobalSection
+EndGlobal
