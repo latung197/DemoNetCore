@@ -118,14 +118,57 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
-
-
         public T NpgGetById(int Id)
         {
             throw new NotImplementedException();
         }
 
         public T NpgDelete(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ExecuteNotReturn(string query, DynamicParameters parammeters = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<T1> ExecuteReturnScalar<T1>(string query, DynamicParameters parammeters = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T1>> ExecuteSqlReturnList<T1>(string query, DynamicParameters parammeters = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T1>> ExecuteFuntionReturnList<T1>(string query, DynamicParameters parammeters = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T GetById(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<T> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public T Add(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T Delete(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(T entity)
         {
             throw new NotImplementedException();
         }
