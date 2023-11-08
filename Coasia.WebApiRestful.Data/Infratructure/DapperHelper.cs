@@ -11,6 +11,9 @@ using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Data.SqlClient;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
@@ -43,8 +46,6 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         }
 
-
-
         public void NpgExecuteNotReturn(string query, DynamicParameters parammeters = null)
         {
             using (var dbConnection = new NpgsqlConnection(connectString))
@@ -63,7 +64,10 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         public async Task<IEnumerable<T>> NpgExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null)
         {
-            throw new NotImplementedException();
+            using(var  dbConnection = new NpgsqlConnection(connectString))
+            {
+                return await dbConnection.QueryAsync<T>(query, parammeters, commandType: CommandType.Text);
+            }
         }
 
         public async Task<IEnumerable<T>> NpgExecuteFuntionReturnList<T>(string query, DynamicParameters parammeters = null)
@@ -73,7 +77,6 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                 return await dbConnection.QueryAsync<T>(query, parammeters, commandType: CommandType.Text);
             }
         }
-
         public IEnumerable<T> NpgGetAll()
         {
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
@@ -95,8 +98,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
-
-        public bool NpgUpdate(T entity)
+        public async Task<T> NpgUpdate(T entity)
         {
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
             var dataSource = dataSourceBuilder.Build();
@@ -104,15 +106,12 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             {
                 try
                 {
-
-                    connection.Update(entity);
-                    return true;
-
+                    return (T)Convert.ChangeType( await connection.UpdateAsync(entity),typeof(T)); 
                 }
                 catch (Exception ex)
                 {
 
-                    return false;
+                    return null;
 
                 }
             }
@@ -130,7 +129,10 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         public void ExecuteNotReturn(string query, DynamicParameters parammeters = null)
         {
-            throw new NotImplementedException();
+            using (var dbConnection = new SqlConnection(connectString))
+            {
+                dbConnection.ExecuteAsync(query, parammeters, commandType: CommandType.Text);
+            }
         }
 
         public Task<T1> ExecuteReturnScalar<T1>(string query, DynamicParameters parammeters = null)
@@ -172,5 +174,6 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         {
             throw new NotImplementedException();
         }
+
     }
 }

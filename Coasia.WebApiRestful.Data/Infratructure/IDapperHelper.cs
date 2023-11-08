@@ -19,7 +19,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         public  IEnumerable<T> NpgGetAll();
         public T NpgAdd(T entity);
         public T NpgDelete(int Id);
-        public bool NpgUpdate(T entity);
+        public Task<T> NpgUpdate(T entity);
 
 
         void ExecuteNotReturn(string query, DynamicParameters parammeters = null);

@@ -1,0 +1,11 @@
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\bin\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.deps.json
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\bin\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\bin\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.pdb
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.AssemblyInfoInputs.cache
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.AssemblyInfo.cs
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.csproj.CoreCompileInputs.cache
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\refint\Coasia.WebApiRestful.Infrastructure.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\Coasia.WebApiRestful.Infrastructure.pdb
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Infrastructure\obj\Debug\net6.0\ref\Coasia.WebApiRestful.Infrastructure.dll
