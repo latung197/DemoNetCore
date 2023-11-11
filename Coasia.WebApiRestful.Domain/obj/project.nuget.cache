@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S3MThToupA7xvr+BLdAeg0c+9pcdt2U9KXBLswRug+4t2AWZ3D9pz0L33HJZP5kvAFPlc6q2hSy42jurrhhJMQ==",
+  "dgSpecHash": "OnBT3AUk1Ax+xNoOQb8FcsexaeROyDwLAI+mHaiCrKYW2sPZbYNpwgc+ue0GSB0PYc/XvfaIBAUi35Ntm5dPaA==",
   "success": true,
-  "projectFilePath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj",
+  "projectFilePath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

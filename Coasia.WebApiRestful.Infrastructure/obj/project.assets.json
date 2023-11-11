@@ -8,23 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
       "projectName": "Coasia.WebApiRestful.Infrastructure",
-      "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\obj\\",
+      "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\",
+      "outputPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Coasia_MI_Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

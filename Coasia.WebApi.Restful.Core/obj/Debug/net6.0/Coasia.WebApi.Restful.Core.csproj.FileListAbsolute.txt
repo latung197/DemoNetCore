@@ -10,3 +10,15 @@ D:\TongHopKienThuc\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasi
 D:\TongHopKienThuc\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\refint\Coasia.WebApi.Restful.Core.dll
 D:\TongHopKienThuc\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.pdb
 D:\TongHopKienThuc\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\ref\Coasia.WebApi.Restful.Core.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\bin\Debug\net6.0\Coasia.WebApi.Restful.Core.deps.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\bin\Debug\net6.0\Coasia.WebApi.Restful.Core.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\bin\Debug\net6.0\Coasia.WebApi.Restful.Core.pdb
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.csproj.AssemblyReference.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.AssemblyInfoInputs.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.AssemblyInfo.cs
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.csproj.CoreCompileInputs.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\refint\Coasia.WebApi.Restful.Core.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\Coasia.WebApi.Restful.Core.pdb
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApi.Restful.Core\obj\Debug\net6.0\ref\Coasia.WebApi.Restful.Core.dll

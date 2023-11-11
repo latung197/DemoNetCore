@@ -119,7 +119,20 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         public T NpgGetById(int Id)
         {
-            throw new NotImplementedException();
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
+            var dataSource = dataSourceBuilder.Build();
+            using(var connection = dataSource.OpenConnection())
+            {
+                try
+                {
+                    return connection.Get<T>(Id);
+                }
+                catch
+                {
+                    return null;
+
+                }
+            }
         }
 
         public T NpgDelete(int Id)
@@ -135,19 +148,28 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
-        public Task<T1> ExecuteReturnScalar<T1>(string query, DynamicParameters parammeters = null)
+        public async Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null)
         {
-            throw new NotImplementedException();
+            using (var dbConnection = new SqlConnection(connectString))
+            {
+                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType: CommandType.Text), typeof(T));
+            }
         }
 
-        public Task<IEnumerable<T1>> ExecuteSqlReturnList<T1>(string query, DynamicParameters parammeters = null)
+        public async Task<IEnumerable<T>> ExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null)
         {
-            throw new NotImplementedException();
+            using (var dbConnection = new SqlConnection(connectString))
+            {
+                return await dbConnection.QueryAsync<T>(query, parammeters, commandType: CommandType.Text);
+            }
         }
 
-        public Task<IEnumerable<T1>> ExecuteFuntionReturnList<T1>(string query, DynamicParameters parammeters = null)
+        public async Task<IEnumerable<T>> ExecuteStoreProcedureReturnList<T>(string query, DynamicParameters parammeters = null)
         {
-            throw new NotImplementedException();
+            using (var dbConnection = new SqlConnection(connectString))
+            {
+                return await dbConnection.QueryAsync<T>(query, parammeters, commandType: CommandType.StoredProcedure);
+            }
         }
 
         public T GetById(int Id)

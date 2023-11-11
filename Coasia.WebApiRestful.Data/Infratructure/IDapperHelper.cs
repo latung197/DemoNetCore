@@ -25,7 +25,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         void ExecuteNotReturn(string query, DynamicParameters parammeters = null);
         Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> ExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null);
-        Task<IEnumerable<T>> ExecuteFuntionReturnList<T>(string query, DynamicParameters parammeters = null);
+        Task<IEnumerable<T>> ExecuteStoreProcedureReturnList<T>(string query, DynamicParameters parammeters = null);
         public T GetById(int Id);
         public IEnumerable<T> GetAll();
         public T Add(T entity);

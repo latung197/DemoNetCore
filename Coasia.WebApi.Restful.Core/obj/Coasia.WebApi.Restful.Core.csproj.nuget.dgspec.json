@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj": {}
+    "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj": {}
   },
   "projects": {
-    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj": {
+    "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj",
+        "projectUniqueName": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj",
         "projectName": "Coasia.WebApi.Restful.Core",
-        "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\obj\\",
+        "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj",
+        "packagesPath": "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Coasia_MI_Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

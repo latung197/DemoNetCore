@@ -30,3 +30,35 @@ D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\refint\Coas
 D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.pdb
 D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.genruntimeconfig.cache
 D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\ref\Coasia.WebApiRestful.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\appsettings.Development.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\appsettings.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Coasia.WebApiRestful.exe
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Coasia.WebApiRestful.deps.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Coasia.WebApiRestful.runtimeconfig.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Coasia.WebApiRestful.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Coasia.WebApiRestful.pdb
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.csproj.AssemblyReference.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.AssemblyInfoInputs.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.AssemblyInfo.cs
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.csproj.CoreCompileInputs.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.MvcApplicationPartsAssemblyInfo.cs
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.MvcApplicationPartsAssemblyInfo.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets\msbuild.Coasia.WebApiRestful.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets\msbuild.build.Coasia.WebApiRestful.props
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Coasia.WebApiRestful.props
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Coasia.WebApiRestful.props
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets.build.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\staticwebassets.development.json
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\scopedcss\bundle\Coasia.WebApiRestful.styles.css
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.csproj.CopyComplete
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\refint\Coasia.WebApiRestful.dll
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.pdb
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\Coasia.WebApiRestful.genruntimeconfig.cache
+D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful\obj\Debug\net6.0\ref\Coasia.WebApiRestful.dll
