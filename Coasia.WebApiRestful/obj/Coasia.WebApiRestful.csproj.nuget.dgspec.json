@@ -1,20 +1,123 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj": {}
+    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj": {}
   },
   "projects": {
-    "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj": {
+    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj",
-        "projectName": "Coasia.WebApiRestful",
-        "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj",
-        "packagesPath": "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\",
-        "outputPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful\\obj\\",
+        "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj",
+        "projectName": "Coasia.WebApiRestful.Data",
+        "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Coasia_MI_Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj": {
+                "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.15, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj",
+        "projectName": "Coasia.WebApiRestful.Domain",
+        "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +142,149 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
+        "projectName": "Coasia.WebApiRestful.Infrastructure",
+        "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj": {
+                "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj",
+        "projectName": "Coasia.WebApiRestful",
+        "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful\\Coasia.WebApiRestful.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj": {
+                "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
