@@ -18,7 +18,6 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         public T NpgGetById(int Id);
         public  IEnumerable<T> NpgGetAll();
         public T NpgAdd(T entity);
-        public T NpgDelete(int Id);
         public Task<T> NpgUpdate(T entity);
 
 
@@ -29,7 +28,8 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         public T GetById(int Id);
         public IEnumerable<T> GetAll();
         public T Add(T entity);
-        public T Delete(int Id);
+        public bool Delete(string table, string columnkey, string Id);
+        public T Delete(T entity);
         public bool Update(T entity);
     }
 }

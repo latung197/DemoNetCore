@@ -14,6 +14,8 @@ using System.Threading.Tasks;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Data.SqlClient;
+using System.Net.WebSockets;
+using static Dapper.SqlMapper;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
@@ -135,9 +137,21 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
-        public T NpgDelete(int Id)
+        public async Task<T> NpgDelete(T entity)
         {
-            throw new NotImplementedException();
+            var dataSourceBuilder= new NpgsqlDataSourceBuilder(connectString);
+            var dataSource = dataSourceBuilder.Build();
+            using(var connection = dataSource.OpenConnection())
+            {
+                try
+                {
+                    return (T)Convert.ChangeType(await connection.DeleteAsync(entity), typeof(T));
+                }
+                catch(Exception ex)
+                {
+                    return null;
+                }
+            }
         }
 
         public void ExecuteNotReturn(string query, DynamicParameters parammeters = null)
@@ -174,27 +188,94 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         public T GetById(int Id)
         {
-            throw new NotImplementedException();
+            using (var dbConnection = new SqlConnection(connectString))
+            {
+                dbConnection.Open();
+                return dbConnection.Get<T>(Id);
+            }
         }
 
         public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            using(var dbConnection = new SqlConnection(connectString))
+            {
+                dbConnection.Open();
+                return dbConnection.GetAll<T>();
+            }
         }
 
         public T Add(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                using (var dbConnection = new SqlConnection(connectString))
+                {
+                    dbConnection.Open();
+                    dbConnection.Insert(entity);
+                    return entity;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
-        public T Delete(int Id)
+        public bool Delete(string table, string columnkey,string Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var dbConnection = new SqlConnection(connectString))
+                {
+                    string str = "delete from " + table + " where " + columnkey + "= " + Id + ";";
+                    //string str1 = @"delete from {0} where {1} = {2};";
+                    //string.Format(str1,table,columnkey,Id);
+                    dbConnection.Open();
+                    dbConnection.ExecuteScalar(str);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public T Delete(T entity)
+        {
+            try
+            {
+
+                using (var dbConnection = new SqlConnection(connectString))
+                {
+                    dbConnection.Open();
+                    dbConnection.Delete(entity);
+                    return entity;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public bool Update(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                using (var dbConnection = new SqlConnection(connectString))
+                {
+                    dbConnection.Open();
+                    dbConnection.Update(entity);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
     }
