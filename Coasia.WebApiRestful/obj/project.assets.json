@@ -2614,6 +2614,7 @@
           "Dapper": "2.1.15",
           "Dapper.Contrib": "2.0.78",
           "Microsoft.EntityFrameworkCore": "7.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
           "Npgsql": "7.0.6",
           "System.Data.SqlClient": "4.8.5"
         },
@@ -2627,6 +2628,9 @@
       "Coasia.WebApiRestful.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.13"
+        },
         "compile": {
           "bin/placeholder/Coasia.WebApiRestful.Domain.dll": {}
         },

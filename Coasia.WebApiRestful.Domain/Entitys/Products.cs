@@ -4,6 +4,7 @@ using Coasia.WebApiRestful.Domain.Abstract;
 
 namespace Coasia.WebApiRestful.Domain.Entitys
 {
+    [Table("Products")]
     public class Products:AuditTable
     {
             

@@ -239,6 +239,9 @@
         }
       },
       "Coasia.WebApiRestful.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.13"
+        },
         "runtime": {
           "Coasia.WebApiRestful.Domain.dll": {}
         }
