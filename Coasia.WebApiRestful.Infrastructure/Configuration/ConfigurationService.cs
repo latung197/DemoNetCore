@@ -15,7 +15,8 @@ namespace Coasia.WebApiRestful.Infrastructure.Configuration
     {
         public static void RigisterContextDb(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<NetCoreDbcontext>(options => options.UseSqlServer(configuration.GetConnectionString("NetWebApiConnection"), options => options.MigrationsAssembly(typeof(NetCoreDbcontext).Assembly.FullName)));
+            services.AddDbContext<NetCoreDbcontext>(options => options.UseSqlServer(configuration.GetConnectionString("NetWebApiConnection"), 
+                                    options => options.MigrationsAssembly(typeof(NetCoreDbcontext).Assembly.FullName)));
         }
     }
 }

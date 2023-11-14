@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coasia.WebApiRestful.Data.Infratructure
+namespace Coasia.WebApiRestful.Data.Abstract
 {
     public interface IRepository<T> where T : class
     {

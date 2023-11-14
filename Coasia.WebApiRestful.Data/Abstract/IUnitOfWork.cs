@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coasia.WebApiRestful.Data.Infratructure
+namespace Coasia.WebApiRestful.Data.Abstract
 {
     internal class IUnitOfWork
     {

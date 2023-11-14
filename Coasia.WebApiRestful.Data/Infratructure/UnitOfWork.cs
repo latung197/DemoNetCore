@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
-    internal class UnitOfWork
+    public class UnitOfWork
     {
     }
 }

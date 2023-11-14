@@ -1,21 +1,10 @@
-﻿using Coasia.WebApiRestful.Domain.Entitys;
-using Dapper;
+﻿using Dapper;
 using Dapper.Contrib.Extensions;
 using Npgsql;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Data.SqlClient;
-using System.Net.WebSockets;
 using static Dapper.SqlMapper;
+using Coasia.WebApiRestful.Data.Abstract;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
@@ -31,18 +20,16 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         {
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
             var dataSource = dataSourceBuilder.Build();
-            using (var connection = dataSource.OpenConnection())
+            using (var connection =  dataSource.OpenConnection())
             {
                 try
                 {
-                    connection.InsertAsync(Entity);
+                    connection.Insert(Entity);
                     return Entity;
                 }
                 catch (Exception ex)
                 {
-
                     return null;
-
                 }
             }
 
@@ -60,7 +47,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         {
             using (var dbConnection = new NpgsqlConnection(connectString))
             {
-                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType:CommandType.Text), typeof(T));
+                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType: CommandType.Text), typeof(T));
             }
         }
 
@@ -166,7 +153,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         {
             using (var dbConnection = new SqlConnection(connectString))
             {
-                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType: CommandType.Text), typeof(T));
+                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
             }
         }
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Coasia.WebApiRestful.Data.Infratructure
+namespace Coasia.WebApiRestful.Data.Abstract
 {
     public interface IDapperHelper<T> where T : class
     {
@@ -16,7 +16,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         Task<IEnumerable<T>> NpgExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> NpgExecuteFuntionReturnList<T>(string query, DynamicParameters parammeters = null);
         public T NpgGetById(int Id);
-        public  IEnumerable<T> NpgGetAll();
+        public IEnumerable<T> NpgGetAll();
         public T NpgAdd(T entity);
         public Task<T> NpgUpdate(T entity);
 

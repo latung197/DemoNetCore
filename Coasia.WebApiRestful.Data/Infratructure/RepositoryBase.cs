@@ -4,56 +4,79 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Coasia.WebApiRestful.Data.Abstract;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
     public class RepositoryBase<T> : IRepository<T> where T : class
     {
-        public IQueryable<T> Table => throw new NotImplementedException();
-
-        public Task CommitAsync()
+        NetCoreDbcontext _netCoreDbcontext;
+        public RepositoryBase(NetCoreDbcontext netCoreDbcontext)
         {
-            throw new NotImplementedException();
+            _netCoreDbcontext = netCoreDbcontext;
+        }
+
+        public IQueryable<T> Table => _netCoreDbcontext.Set<T>();
+
+        public async Task CommitAsync()
+        {
+            await _netCoreDbcontext.SaveChangesAsync();
         }
 
         public void Delete(Expression<Func<T, bool>> expression)
         {
-            throw new NotImplementedException();
+            var entitys = _netCoreDbcontext.Set<T>().Where(expression).ToList();
+            if (entitys.Count > 0)
+            {
+                _netCoreDbcontext.Set<T>().RemoveRange(entitys);
+            }
         }
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            EntityEntry entityEntry = _netCoreDbcontext.Entry(entity);
+            entityEntry.State = EntityState.Deleted;
+
         }
 
-        public Task<List<T>> GetAllAsync(Expression<Func<T, bool>> expression = null)
+        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> expression = null)
         {
-            throw new NotImplementedException();
+            if (expression == null)
+            {
+                return await _netCoreDbcontext.Set<T>().ToListAsync();
+            }
+            else
+            {
+                return await _netCoreDbcontext.Set<T>().Where(expression).ToListAsync();
+            }
         }
 
-        public Task<T> GetByIdAsync(object id)
+        public async Task<T> GetByIdAsync(object id)
         {
-            throw new NotImplementedException();
+            return await _netCoreDbcontext.Set<T>().FindAsync(id);
         }
 
-        public Task<T> GetSingleByConditionAsync(Expression<Func<T, bool>> expression = null)
+        public async Task<T> GetSingleByConditionAsync(Expression<Func<T, bool>> expression = null)
         {
-            throw new NotImplementedException();
+            return await _netCoreDbcontext.Set<T>().FirstOrDefaultAsync();
         }
 
-        public Task InsertAsync(T entity)
+        public async Task InsertAsync(T entity)
         {
-            throw new NotImplementedException();
+            await _netCoreDbcontext.AddAsync(entity);
         }
 
-        public Task InsertAsync(IEnumerable<T> entities)
+        public async Task InsertAsync(IEnumerable<T> entities)
         {
-            throw new NotImplementedException();
+            await _netCoreDbcontext.AddRangeAsync(entities);
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            EntityEntry entityEntry = _netCoreDbcontext.Entry(entity);
+            entityEntry.State = EntityState.Modified;
         }
     }
 }
