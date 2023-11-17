@@ -16,11 +16,13 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         //{
 
         //}
+
+        #region Data Postgrest
         public T NpgAdd(T Entity)
         {
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
             var dataSource = dataSourceBuilder.Build();
-            using (var connection =  dataSource.OpenConnection())
+            using (var connection = dataSource.OpenConnection())
             {
                 try
                 {
@@ -53,7 +55,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         public async Task<IEnumerable<T>> NpgExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null)
         {
-            using(var  dbConnection = new NpgsqlConnection(connectString))
+            using (var dbConnection = new NpgsqlConnection(connectString))
             {
                 return await dbConnection.QueryAsync<T>(query, parammeters, commandType: CommandType.Text);
             }
@@ -74,15 +76,11 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             {
                 try
                 {
-                   
-                  return connection.GetAll<T>();
-
+                    return connection.GetAll<T>();
                 }
                 catch (Exception ex)
                 {
-
                     return null;
-
                 }
             }
         }
@@ -95,13 +93,11 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             {
                 try
                 {
-                    return (T)Convert.ChangeType( await connection.UpdateAsync(entity),typeof(T)); 
+                    return (T)Convert.ChangeType(await connection.UpdateAsync(entity), typeof(T));
                 }
                 catch (Exception ex)
                 {
-
                     return null;
-
                 }
             }
         }
@@ -110,7 +106,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         {
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
             var dataSource = dataSourceBuilder.Build();
-            using(var connection = dataSource.OpenConnection())
+            using (var connection = dataSource.OpenConnection())
             {
                 try
                 {
@@ -119,28 +115,30 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                 catch
                 {
                     return null;
-
                 }
             }
         }
 
         public async Task<T> NpgDelete(T entity)
         {
-            var dataSourceBuilder= new NpgsqlDataSourceBuilder(connectString);
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
             var dataSource = dataSourceBuilder.Build();
-            using(var connection = dataSource.OpenConnection())
+            using (var connection = dataSource.OpenConnection())
             {
                 try
                 {
                     return (T)Convert.ChangeType(await connection.DeleteAsync(entity), typeof(T));
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     return null;
                 }
             }
         }
 
+        #endregion
+        #region Database SQLServer
+        // Thực thi câu truy vấn và không trả về kết quả
         public void ExecuteNotReturn(string query, DynamicParameters parammeters = null)
         {
             using (var dbConnection = new SqlConnection(connectString))
@@ -148,7 +146,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                 dbConnection.ExecuteAsync(query, parammeters, commandType: CommandType.Text);
             }
         }
-
+        // Thực thi câu lệnh trả về một kết quả
         public async Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null)
         {
             using (var dbConnection = new SqlConnection(connectString))
@@ -156,7 +154,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                 return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
             }
         }
-
+        // Thực thi câu lệnh trả về danh sách các hàm thoả mãn
         public async Task<IEnumerable<T>> ExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null)
         {
             using (var dbConnection = new SqlConnection(connectString))
@@ -165,6 +163,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
+        // Thực thi gọi chạy StoreProceduct trả về danh sách kết quả
         public async Task<IEnumerable<T>> ExecuteStoreProcedureReturnList<T>(string query, DynamicParameters parammeters = null)
         {
             using (var dbConnection = new SqlConnection(connectString))
@@ -173,6 +172,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
+        // Thực thi câu lệnh trả về một dòng thoả mãn điều kiện
         public T GetById(int Id)
         {
             using (var dbConnection = new SqlConnection(connectString))
@@ -182,15 +182,17 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
+        // Thực thi câu lệnh lấy tất cả giá trị của bảng
         public IEnumerable<T> GetAll()
         {
-            using(var dbConnection = new SqlConnection(connectString))
+            using (var dbConnection = new SqlConnection(connectString))
             {
                 dbConnection.Open();
                 return dbConnection.GetAll<T>();
             }
         }
 
+        // Thêm mới một dối tượng
         public T Add(T entity)
         {
             try
@@ -209,7 +211,8 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
-        public bool Delete(string table, string columnkey,string Id)
+        // Xoá một đối tượng với biến gồm bảng, cột khoá chính, Khoá chính
+        public bool Delete(string table, string columnkey, string Id)
         {
             try
             {
@@ -220,6 +223,25 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                     //string.Format(str1,table,columnkey,Id);
                     dbConnection.Open();
                     dbConnection.ExecuteScalar(str);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool Delete(string table, string where)
+        {
+            try
+            {
+                using (var dbConnection = new SqlConnection(connectString))
+                {
+                    string str = "delete from " + table + " where " + where + ";";
+                    //string str1 = @"delete from {0} where {1};";
+                    //string.Format(str1,table,where);
+                    dbConnection.Open();
+                    dbConnection.Execute(str);
                     return true;
                 }
             }
@@ -264,6 +286,7 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                 return false;
             }
         }
+        #endregion
 
     }
 }

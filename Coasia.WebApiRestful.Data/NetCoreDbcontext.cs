@@ -12,9 +12,8 @@ namespace Coasia.WebApiRestful.Data
     {
         public NetCoreDbcontext( DbContextOptions<NetCoreDbcontext> options): base(options) 
         { 
-
+                
         }
-
         public DbSet<Products> products { get; set; }
         public DbSet<Categories> categories { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

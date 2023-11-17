@@ -14,12 +14,11 @@ namespace Coasia.WebApiRestful.Domain.Entitys
         public int QuatityPerUnit { get; set; }
         public double UnitPrice { get; set; }
         public int UnitInStock { get; set; }
-        public DateTime CreatedDate { get; set; }
         public int UnitOnOrder { get; set; }
         [Required]
         public int CategoryId { get; set; }
 
-        [ForeignKey("CategoryId")]
+        //[ForeignKey("CategoryId")]
         public Categories Categories { get; set; }
     }
 }

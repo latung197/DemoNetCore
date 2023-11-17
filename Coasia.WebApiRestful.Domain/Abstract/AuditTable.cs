@@ -8,7 +8,12 @@ namespace Coasia.WebApiRestful.Domain.Abstract
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
-        public int Id { get; set ; }
-        public bool IsActive { get ; set; }
+        public int Id { get; set; }
+        public bool IsActive { get; set; }
+        public string? CreatedID { get; set; }
+        public string? UpdatedID { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+
     }
 }

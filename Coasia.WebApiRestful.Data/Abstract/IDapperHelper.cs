@@ -29,6 +29,7 @@ namespace Coasia.WebApiRestful.Data.Abstract
         public IEnumerable<T> GetAll();
         public T Add(T entity);
         public bool Delete(string table, string columnkey, string Id);
+        public bool Delete(string table, string where);
         public T Delete(T entity);
         public bool Update(T entity);
     }

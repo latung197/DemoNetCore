@@ -19,12 +19,14 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         }
 
         public IQueryable<T> Table => _netCoreDbcontext.Set<T>();
-
+        
+        //Lưu thay đổi
         public async Task CommitAsync()
         {
             await _netCoreDbcontext.SaveChangesAsync();
         }
 
+        // Xoá danh sách các đối tượng theo điều kiện
         public void Delete(Expression<Func<T, bool>> expression)
         {
             var entitys = _netCoreDbcontext.Set<T>().Where(expression).ToList();
@@ -34,13 +36,14 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
+        // Xoá một đối tượng theo điều kiện
         public void Delete(T entity)
         {
             EntityEntry entityEntry = _netCoreDbcontext.Entry(entity);
             entityEntry.State = EntityState.Deleted;
-
         }
 
+        // Đọc danh sách các đối tượng theo điều kiện
         public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> expression = null)
         {
             if (expression == null)
@@ -53,26 +56,31 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
+        // Đọc dữ liệu đối tượng đầu tiên thoả mãn điều kiện
         public async Task<T> GetByIdAsync(object id)
         {
             return await _netCoreDbcontext.Set<T>().FindAsync(id);
         }
 
+        // Lấy danh sách các đối tượng thoả mãn điều kiện
         public async Task<T> GetSingleByConditionAsync(Expression<Func<T, bool>> expression = null)
         {
             return await _netCoreDbcontext.Set<T>().FirstOrDefaultAsync();
         }
 
+        // Thêm mới một đối tượng
         public async Task InsertAsync(T entity)
         {
             await _netCoreDbcontext.AddAsync(entity);
         }
 
+        // Thêm mới nhiều đổi tượng khác nhau
         public async Task InsertAsync(IEnumerable<T> entities)
         {
             await _netCoreDbcontext.AddRangeAsync(entities);
         }
 
+        // Cập nhật thông tin một đối tượng
         public void Update(T entity)
         {
             EntityEntry entityEntry = _netCoreDbcontext.Entry(entity);
