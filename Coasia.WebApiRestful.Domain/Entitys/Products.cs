@@ -19,6 +19,6 @@ namespace Coasia.WebApiRestful.Domain.Entitys
         public int CategoryId { get; set; }
 
         //[ForeignKey("CategoryId")]
-        public Categories Categories { get; set; }
+        //public Categories Categories { get; set; }
     }
 }

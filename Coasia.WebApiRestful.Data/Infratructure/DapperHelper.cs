@@ -2,9 +2,9 @@
 using Dapper.Contrib.Extensions;
 using Npgsql;
 using System.Data;
-using System.Data.SqlClient;
 using static Dapper.SqlMapper;
 using Coasia.WebApiRestful.Data.Abstract;
+using Microsoft.Data.SqlClient;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
