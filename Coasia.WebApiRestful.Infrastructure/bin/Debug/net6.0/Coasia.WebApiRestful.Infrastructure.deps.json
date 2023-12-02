@@ -712,6 +712,9 @@
         }
       },
       "Coasia.WebApiRestful.Service/1.0.0": {
+        "dependencies": {
+          "Coasia.WebApiRestful.Data": "1.0.0"
+        },
         "runtime": {
           "Coasia.WebApiRestful.Service.dll": {}
         }

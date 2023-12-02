@@ -345,7 +345,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj": {
+                "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

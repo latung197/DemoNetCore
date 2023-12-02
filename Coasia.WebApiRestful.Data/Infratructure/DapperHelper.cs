@@ -5,37 +5,38 @@ using System.Data;
 using static Dapper.SqlMapper;
 using Coasia.WebApiRestful.Data.Abstract;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace Coasia.WebApiRestful.Data.Infratructure
 {
-    public class DapperHelper<T> : IDapperHelper<T> where T : class
+    public class DapperHelper: IDapperHelper
     {
         private readonly string connectString = string.Empty;
 
-        //public DapperHelper(IConfiguration configuration)
-        //{
-
-        //}
+        public DapperHelper(IConfiguration configuration)
+        {
+            connectString = configuration.GetConnectionString("NetWebApiConnection");
+        }
 
         #region Data Postgrest
-        public T NpgAdd(T Entity)
-        {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
-            var dataSource = dataSourceBuilder.Build();
-            using (var connection = dataSource.OpenConnection())
-            {
-                try
-                {
-                    connection.Insert(Entity);
-                    return Entity;
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
-            }
+        //public T NpgAdd(T Entity)
+        //{
+        //    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
+        //    var dataSource = dataSourceBuilder.Build();
+        //    using (var connection = dataSource.OpenConnection())
+        //    {
+        //        try
+        //        {
+        //            connection.Insert(Entity);
+        //            return Entity;
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            return null;
+        //        }
+        //    }
 
-        }
+        //}
 
         public void NpgExecuteNotReturn(string query, DynamicParameters parammeters = null)
         {
@@ -68,82 +69,82 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                 return await dbConnection.QueryAsync<T>(query, parammeters, commandType: CommandType.Text);
             }
         }
-        public IEnumerable<T> NpgGetAll()
-        {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
-            var dataSource = dataSourceBuilder.Build();
-            using (var connection = dataSource.OpenConnection())
-            {
-                try
-                {
-                    return connection.GetAll<T>();
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
-            }
-        }
+        //public IEnumerable<T> NpgGetAll()
+        //{
+        //    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
+        //    var dataSource = dataSourceBuilder.Build();
+        //    using (var connection = dataSource.OpenConnection())
+        //    {
+        //        try
+        //        {
+        //            return connection.GetAll<T>();
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            return null;
+        //        }
+        //    }
+        //}
 
-        public async Task<T> NpgUpdate(T entity)
-        {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
-            var dataSource = dataSourceBuilder.Build();
-            using (var connection = dataSource.OpenConnection())
-            {
-                try
-                {
-                    return (T)Convert.ChangeType(await connection.UpdateAsync(entity), typeof(T));
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
-            }
-        }
+        //public async Task<T> NpgUpdate(T entity)
+        //{
+        //    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
+        //    var dataSource = dataSourceBuilder.Build();
+        //    using (var connection = dataSource.OpenConnection())
+        //    {
+        //        try
+        //        {
+        //            return (T)Convert.ChangeType(await connection.UpdateAsync(entity), typeof(T));
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            return null;
+        //        }
+        //    }
+        //}
 
-        public T NpgGetById(int Id)
-        {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
-            var dataSource = dataSourceBuilder.Build();
-            using (var connection = dataSource.OpenConnection())
-            {
-                try
-                {
-                    return connection.Get<T>(Id);
-                }
-                catch
-                {
-                    return null;
-                }
-            }
-        }
+        //public T NpgGetById(int Id)
+        //{
+        //    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
+        //    var dataSource = dataSourceBuilder.Build();
+        //    using (var connection = dataSource.OpenConnection())
+        //    {
+        //        try
+        //        {
+        //            return connection.Get<T>(Id);
+        //        }
+        //        catch
+        //        {
+        //            return null;
+        //        }
+        //    }
+        //}
 
-        public async Task<T> NpgDelete(T entity)
-        {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
-            var dataSource = dataSourceBuilder.Build();
-            using (var connection = dataSource.OpenConnection())
-            {
-                try
-                {
-                    return (T)Convert.ChangeType(await connection.DeleteAsync(entity), typeof(T));
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
-            }
-        }
+        //public async Task<T> NpgDelete(T entity)
+        //{
+        //    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectString);
+        //    var dataSource = dataSourceBuilder.Build();
+        //    using (var connection = dataSource.OpenConnection())
+        //    {
+        //        try
+        //        {
+        //            return (T)Convert.ChangeType(await connection.DeleteAsync(entity), typeof(T));
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            return null;
+        //        }
+        //    }
+        //}
 
         #endregion
         #region Database SQLServer
         // Thực thi câu truy vấn và không trả về kết quả
-        public void ExecuteNotReturn(string query, DynamicParameters parammeters = null)
+        public void ExecuteNotReturn(string query, DynamicParameters parammeters = null, IDbTransaction dbTransaction = null)
         {
             using (var dbConnection = new SqlConnection(connectString))
             {
-                dbConnection.ExecuteAsync(query, parammeters, commandType: CommandType.Text);
+                dbConnection.ExecuteAsync(query, parammeters, dbTransaction, commandType: CommandType.Text);
             }
         }
         // Thực thi câu lệnh trả về một kết quả
@@ -173,43 +174,43 @@ namespace Coasia.WebApiRestful.Data.Infratructure
         }
 
         // Thực thi câu lệnh trả về một dòng thoả mãn điều kiện
-        public T GetById(int Id)
-        {
-            using (var dbConnection = new SqlConnection(connectString))
-            {
-                dbConnection.Open();
-                return dbConnection.Get<T>(Id);
-            }
-        }
+        //public T GetById(int Id)
+        //{
+        //    using (var dbConnection = new SqlConnection(connectString))
+        //    {
+        //        dbConnection.Open();
+        //        return dbConnection.Get<T>(Id);
+        //    }
+        //}
 
-        // Thực thi câu lệnh lấy tất cả giá trị của bảng
-        public IEnumerable<T> GetAll()
-        {
-            using (var dbConnection = new SqlConnection(connectString))
-            {
-                dbConnection.Open();
-                return dbConnection.GetAll<T>();
-            }
-        }
+        //// Thực thi câu lệnh lấy tất cả giá trị của bảng
+        //public IEnumerable<T> GetAll()
+        //{
+        //    using (var dbConnection = new SqlConnection(connectString))
+        //    {
+        //        dbConnection.Open();
+        //        return dbConnection.GetAll<T>();
+        //    }
+        //}
 
         // Thêm mới một dối tượng
-        public T Add(T entity)
-        {
-            try
-            {
+        //public T Add(T entity)
+        //{
+        //    try
+        //    {
 
-                using (var dbConnection = new SqlConnection(connectString))
-                {
-                    dbConnection.Open();
-                    dbConnection.Insert(entity);
-                    return entity;
-                }
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
+        //        using (var dbConnection = new SqlConnection(connectString))
+        //        {
+        //            dbConnection.Open();
+        //            dbConnection.Insert(entity);
+        //            return entity;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return null;
+        //    }
+        //}
 
         // Xoá một đối tượng với biến gồm bảng, cột khoá chính, Khoá chính
         public bool Delete(string table, string columnkey, string Id)
@@ -251,41 +252,41 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
 
-        public T Delete(T entity)
-        {
-            try
-            {
+        //public T Delete(T entity)
+        //{
+        //    try
+        //    {
 
-                using (var dbConnection = new SqlConnection(connectString))
-                {
-                    dbConnection.Open();
-                    dbConnection.Delete(entity);
-                    return entity;
-                }
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
+        //        using (var dbConnection = new SqlConnection(connectString))
+        //        {
+        //            dbConnection.Open();
+        //            dbConnection.Delete(entity);
+        //            return entity;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return null;
+        //    }
+        //}
 
-        public bool Update(T entity)
-        {
-            try
-            {
+        //public bool Update(T entity)
+        //{
+        //    try
+        //    {
 
-                using (var dbConnection = new SqlConnection(connectString))
-                {
-                    dbConnection.Open();
-                    dbConnection.Update(entity);
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
+        //        using (var dbConnection = new SqlConnection(connectString))
+        //        {
+        //            dbConnection.Open();
+        //            dbConnection.Update(entity);
+        //            return true;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return false;
+        //    }
+        //}
         #endregion
 
     }

@@ -11,7 +11,8 @@ public class Startup
     // This method gets called by the runtime. Use this method to add serices to the container.
     public void ConfigureServices(IServiceCollection services)
     {
-        ConfigurationService.RigisterContextDb(services, Configuration);
+        services.RigisterContextDb( Configuration);
+        services.RegisterDI(Configuration);
         //services.AddDbContext...
     }
 

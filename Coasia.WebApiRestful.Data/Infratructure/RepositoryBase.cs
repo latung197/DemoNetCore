@@ -20,6 +20,9 @@ namespace Coasia.WebApiRestful.Data.Infratructure
 
         public IQueryable<T> Table => _netCoreDbcontext.Set<T>();
         
+        // IEnumerable : Trả dữ liệu Lưu dữ liệu lưu local xử lý dưới máy client
+        // IQueryable: Xử lý dữ liệu trên máy chủ
+
         //Lưu thay đổi
         public async Task CommitAsync()
         {

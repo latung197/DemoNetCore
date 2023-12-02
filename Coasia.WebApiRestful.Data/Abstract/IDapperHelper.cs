@@ -1,10 +1,11 @@
 ﻿using Dapper;
 using System.Collections.Generic;
+using System.Data;
 using System.Threading.Tasks;
 
 namespace Coasia.WebApiRestful.Data.Abstract
 {
-    public interface IDapperHelper<T> where T : class
+    public interface IDapperHelper
     {
         /// <summary>
         /// Execute raw query not return any values
@@ -15,22 +16,22 @@ namespace Coasia.WebApiRestful.Data.Abstract
         Task<T> NpgExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> NpgExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> NpgExecuteFuntionReturnList<T>(string query, DynamicParameters parammeters = null);
-        public T NpgGetById(int Id);
-        public IEnumerable<T> NpgGetAll();
-        public T NpgAdd(T entity);
-        public Task<T> NpgUpdate(T entity);
+        //public T NpgGetById(int Id);
+        //public IEnumerable<T> NpgGetAll();
+        //public T NpgAdd(T entity);
+        //public Task<T> NpgUpdate(T entity);
 
 
-        void ExecuteNotReturn(string query, DynamicParameters parammeters = null);
+        void ExecuteNotReturn(string query, DynamicParameters parammeters = null, IDbTransaction dbTransaction=null);
         Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> ExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> ExecuteStoreProcedureReturnList<T>(string query, DynamicParameters parammeters = null);
-        public T GetById(int Id);
-        public IEnumerable<T> GetAll();
-        public T Add(T entity);
+        //public T GetById(int Id);
+        //public IEnumerable<T> GetAll();
+        //public T Add(T entity);
         public bool Delete(string table, string columnkey, string Id);
         public bool Delete(string table, string where);
-        public T Delete(T entity);
-        public bool Update(T entity);
+        //public T Delete(T entity);
+        //public bool Update(T entity);
     }
 }

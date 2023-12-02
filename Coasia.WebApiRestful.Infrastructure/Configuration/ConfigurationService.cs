@@ -1,4 +1,7 @@
 ﻿using Coasia.WebApiRestful.Data;
+using Coasia.WebApiRestful.Data.Abstract;
+using Coasia.WebApiRestful.Data.Infratructure;
+using Coasia.WebApiRestful.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,9 +24,11 @@ namespace Coasia.WebApiRestful.Infrastructure.Configuration
                                     options => options.MigrationsAssembly(typeof(NetCoreDbcontext).Assembly.FullName)));
         }
 
-        public static void Test(this IServiceCollection services, IConfiguration configuration)
+        public static void RegisterDI(this IServiceCollection services, IConfiguration configuration)
         {
-            Console.WriteLine("no name");
+            services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));
+            services.AddScoped<IDapperHelper, DapperHelper>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
     }
 }

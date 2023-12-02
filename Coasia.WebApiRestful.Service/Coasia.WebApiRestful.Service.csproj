@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Coasia.WebApiRestful.Data\Coasia.WebApiRestful.Data.csproj" />
+  </ItemGroup>
+
 </Project>
