@@ -12,23 +12,6 @@ D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\refi
 D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
 D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.genruntimeconfig.cache
 D:\Tài Liệu\Source\DotnetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\ref\Coasia.WebApiRestful.Data.dll
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.deps.json
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.runtimeconfig.json
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.dll
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Domain.dll
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Domain.pdb
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.AssemblyReference.cache
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.GeneratedMSBuildEditorConfig.editorconfig
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.AssemblyInfoInputs.cache
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.AssemblyInfo.cs
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.CoreCompileInputs.cache
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.CopyComplete
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.dll
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\refint\Coasia.WebApiRestful.Data.dll
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.genruntimeconfig.cache
-D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\ref\Coasia.WebApiRestful.Data.dll
 D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.deps.json
 D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.runtimeconfig.json
 D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.dll
@@ -46,3 +29,20 @@ D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\ref
 D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
 D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.genruntimeconfig.cache
 D:\Tài Liệu\Source\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\ref\Coasia.WebApiRestful.Data.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.deps.json
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.runtimeconfig.json
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Domain.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\bin\Debug\net6.0\Coasia.WebApiRestful.Domain.pdb
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.AssemblyReference.cache
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.AssemblyInfoInputs.cache
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.AssemblyInfo.cs
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.CoreCompileInputs.cache
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.csproj.CopyComplete
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\refint\Coasia.WebApiRestful.Data.dll
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.pdb
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\Coasia.WebApiRestful.Data.genruntimeconfig.cache
+D:\TongHopKienThuc\DemoNetCore\Coasia.WebApiRestful.Data\obj\Debug\net6.0\ref\Coasia.WebApiRestful.Data.dll
