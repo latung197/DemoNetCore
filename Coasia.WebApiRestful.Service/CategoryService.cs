@@ -16,5 +16,11 @@ namespace Coasia.WebApiRestful.Service
         {
             return await _categoryRepository.GetAllAsync();
         }
+
+        public async Task Insert(Categories categories)
+        {
+             await _categoryRepository.InsertAsync(categories);
+            await _categoryRepository.CommitAsync();
+        }
     }
 }

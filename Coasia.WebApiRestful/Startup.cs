@@ -12,6 +12,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.RigisterContextDb( Configuration);
+
         services.RegisterDI(Configuration);
         //services.AddDbContext...
     }
