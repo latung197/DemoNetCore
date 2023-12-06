@@ -23,7 +23,7 @@ namespace Coasia.WebApiRestful.Data.Abstract
 
 
         void ExecuteNotReturn(string query, DynamicParameters parammeters = null, IDbTransaction dbTransaction=null);
-        Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null);
+        Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null, IDbTransaction dbTransaction = null);
         Task<IEnumerable<T>> ExecuteSqlReturnList<T>(string query, DynamicParameters parammeters = null);
         Task<IEnumerable<T>> ExecuteStoreProcedureReturnList<T>(string query, DynamicParameters parammeters = null);
         //public T GetById(int Id);

@@ -148,11 +148,11 @@ namespace Coasia.WebApiRestful.Data.Infratructure
             }
         }
         // Thực thi câu lệnh trả về một kết quả
-        public async Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null)
+        public async Task<T> ExecuteReturnScalar<T>(string query, DynamicParameters parammeters = null, IDbTransaction dbTransaction = null)
         {
             using (var dbConnection = new SqlConnection(connectString))
             {
-                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
+                return (T)Convert.ChangeType(await dbConnection.ExecuteScalarAsync<T>(query, parammeters,dbTransaction, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
             }
         }
         // Thực thi câu lệnh trả về danh sách các hàm thoả mãn
@@ -222,8 +222,8 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                     string str = "delete from " + table + " where " + columnkey + "= " + Id + ";";
                     //string str1 = @"delete from {0} where {1} = {2};";
                     //string.Format(str1,table,columnkey,Id);
-                    dbConnection.Open();
-                    dbConnection.ExecuteScalar(str);
+                    dbConnection.OpenAsync();
+                    dbConnection.ExecuteScalarAsync(str);
                     return true;
                 }
             }
@@ -241,8 +241,8 @@ namespace Coasia.WebApiRestful.Data.Infratructure
                     string str = "delete from " + table + " where " + where + ";";
                     //string str1 = @"delete from {0} where {1};";
                     //string.Format(str1,table,where);
-                    dbConnection.Open();
-                    dbConnection.Execute(str);
+                    dbConnection.OpenAsync();
+                    dbConnection.ExecuteAsync(str);
                     return true;
                 }
             }

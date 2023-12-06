@@ -10,6 +10,11 @@ namespace Coasia.WebApiRestful.Controllers
     {
         ICategoryService _categoryService;
 
+
+        public IActionResult GetList()
+        {
+            return Ok("ListOj");
+        }
         public CategoryController(ICategoryService categoryService)
         {
             _categoryService = categoryService;
@@ -26,6 +31,21 @@ namespace Coasia.WebApiRestful.Controllers
         {
             await _categoryService.Insert(categories);
         }
+
+        [HttpGet("{id:int}")]
+        public IActionResult GetById(int id)
+        {
+            return Ok($"GetById Ok{id} ");
+
+        }
+
+        //public IActionResult CreateById()
+        //{
+        //    return Ok();
+        //}
+
+        //public IActionResult Update
+
         //public IActionResult Index()
         //{
         //    return View();
