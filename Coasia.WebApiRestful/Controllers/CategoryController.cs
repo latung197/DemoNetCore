@@ -15,6 +15,9 @@ namespace Coasia.WebApiRestful.Controllers
         {
             return Ok("ListOj");
         }
+
+
+
         public CategoryController(ICategoryService categoryService)
         {
             _categoryService = categoryService;
@@ -37,6 +40,14 @@ namespace Coasia.WebApiRestful.Controllers
         {
             return Ok($"GetById Ok{id} ");
 
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllCategory()
+        {
+            var result = await _categoryService.GetCategories();
+
+            return Ok(result);
         }
 
         //public IActionResult CreateById()

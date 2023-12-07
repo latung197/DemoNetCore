@@ -16,6 +16,7 @@ namespace Coasia.WebApiRestful.Data
         }
         public DbSet<Products> products { get; set; }
         public DbSet<Categories> categories { get; set; }
+        public DbSet<DBLog> log { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

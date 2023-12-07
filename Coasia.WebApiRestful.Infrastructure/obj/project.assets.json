@@ -3077,23 +3077,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
       "projectName": "Coasia.WebApiRestful.Infrastructure",
-      "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\obj\\",
+      "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\Coasia.WebApiRestful.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\",
+      "outputPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Coasia_MI_Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3107,14 +3103,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj": {
-              "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj"
+            "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj": {
+              "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApi.Restful.Core\\Coasia.WebApi.Restful.Core.csproj"
             },
-            "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj": {
-              "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj"
+            "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj": {
+              "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj"
             },
-            "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Service\\Coasia.WebApiRestful.Service.csproj": {
-              "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Service\\Coasia.WebApiRestful.Service.csproj"
+            "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Service\\Coasia.WebApiRestful.Service.csproj": {
+              "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Service\\Coasia.WebApiRestful.Service.csproj"
             }
           }
         }
