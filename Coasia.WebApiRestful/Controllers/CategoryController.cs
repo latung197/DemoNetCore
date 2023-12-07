@@ -39,7 +39,12 @@ namespace Coasia.WebApiRestful.Controllers
         public IActionResult GetById(int id)
         {
             return Ok($"GetById Ok{id} ");
+        }
 
+        [HttpGet("{id:int}")]
+        public IActionResult GetById1(int id)//api/category?name=abc&descrip=cne
+        {
+            return Ok($"GetById Ok{id} ");
         }
 
         [HttpGet("GetAll")]
@@ -48,6 +53,56 @@ namespace Coasia.WebApiRestful.Controllers
             var result = await _categoryService.GetCategories();
 
             return Ok(result);
+        }
+
+        public IActionResult GetByName(string name)
+        {
+            List<string> items = null;
+            if(items==null)
+            {
+                return NotFound();// 404 khoong cos duw lieeuj
+            }
+            else
+            {
+                return Ok();
+            }
+        }
+
+        public IActionResult Create([FromBody] Categories categories)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest();
+                }
+                else
+                {
+                    return Ok();
+                }
+            }
+            catch(System.Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);// 500
+            }
+
+        }
+
+        public IActionResult Update([FromBody] Categories categories)
+        {
+            return NoContent();// 204
+        }
+
+        [HttpGet]
+        [Route("get-report-csv")]
+        public IActionResult GetReportCSV()
+        {
+            byte[] data = null;
+            var fileName = $"testExcel.xlsx";
+            var mimetype = "application/vnd.opnexmlformatss-officedocument.spreadsheet.sheet";
+            return File(data, mimetype, fileName);
+
+
         }
 
         //public IActionResult CreateById()
@@ -61,5 +116,7 @@ namespace Coasia.WebApiRestful.Controllers
         //{
         //    return View();
         //}
+
+        // Status Code
     }
 }

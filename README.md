@@ -1,4 +1,4 @@
-# DemoNetCore
+﻿# DemoNetCore
 Ngày 01/12/2023
 Học video bài số 2:
 Nội dung:
@@ -8,3 +8,4 @@ và dễ dàng bảo trì hơn.
 Bài Số 3: Design Reporsitory
 - Giảm sự phụ thuộc giữa tầng Business với tần Data
   Đến bài 7 lỗi Đăng ký API
+Bài số 8:

@@ -3056,19 +3056,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj",
+      "projectUniqueName": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj",
       "projectName": "Coasia.WebApiRestful.Data",
-      "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj",
-      "packagesPath": "C:\\Users\\Coasia_MI_Laptop\\.nuget\\packages\\",
-      "outputPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Data\\obj\\",
+      "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\Coasia.WebApiRestful.Data.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Data\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Coasia_MI_Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3082,8 +3086,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj": {
-              "projectPath": "D:\\Tài Liệu\\Source\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj"
+            "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj": {
+              "projectPath": "D:\\TongHopKienThuc\\DemoNetCore\\Coasia.WebApiRestful.Domain\\Coasia.WebApiRestful.Domain.csproj"
             }
           }
         }
