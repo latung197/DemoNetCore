@@ -88,10 +88,7 @@ namespace Coasia.WebApiRestful.Controllers
 
         }
 
-        public IActionResult Update([FromBody] Categories categories)
-        {
-            return NoContent();// 204
-        }
+ 
 
         [HttpGet]
         [Route("get-report-csv")]
@@ -101,7 +98,6 @@ namespace Coasia.WebApiRestful.Controllers
             var fileName = $"testExcel.xlsx";
             var mimetype = "application/vnd.opnexmlformatss-officedocument.spreadsheet.sheet";
             return File(data, mimetype, fileName);
-
 
         }
 

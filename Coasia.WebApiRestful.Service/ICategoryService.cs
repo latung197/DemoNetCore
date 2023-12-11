@@ -7,4 +7,6 @@ namespace Coasia.WebApiRestful.Service
         Task<IEnumerable<Categories>> GetCategories();
         Task Insert(Categories categories);
     }
+
+
 }
