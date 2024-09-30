@@ -9,7 +9,7 @@ namespace Coasia.WebApiRestful.Service
         IRepository<Categories> _categoryRepository;
         public CategoryService(IRepository<Categories> categoryRepository)
         {
-            _categoryRepository = categoryRepository;
+            _categoryRepository = categoryRepository        ;
         }
 
         public async Task<IEnumerable<Categories>> GetCategories()
